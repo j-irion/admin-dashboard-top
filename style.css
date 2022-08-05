@@ -1,0 +1,42 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 5fr 5fr;
+}
+
+.header {
+    grid-column: 2 / -1;
+    grid-row: 1 / 2;
+}
+
+.sidebar {
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
+    background-color: #D48166;
+}
+
+.nav {
+    grid-column: 2 / -1;
+    grid-row: 2 / 3;
+}
+
+.projects {
+    grid-column: 2 / 3;
+    grid-row: 3 / -1;
+}
+
+.announcements {
+    grid-column: 3 / -1;
+    grid-row: 3 / 4;
+}
+
+.trending {
+    grid-column: 3 / -1;
+    grid-row: 4 / -1;
+}
+
+.projects,
+.announcements,
+.trending {
+    background-color: #E6E2DD;
+}
