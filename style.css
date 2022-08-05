@@ -13,8 +13,10 @@ body {
 }
 
 .header {
+    display: grid;
     grid-column: 2 / -1;
     grid-row: 1 / 2;
+    grid-auto-flow: column;
 }
 
 .sidebar {
