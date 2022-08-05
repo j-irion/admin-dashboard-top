@@ -29,6 +29,7 @@ body {
     grid-template-columns: 1fr;
     grid-template-rows: 75px repeat(10, 50px);
     color: #ffffff;
+    font-size: 18px;
 }
 
 #logo > h1 {
