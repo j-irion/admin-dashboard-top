@@ -2,6 +2,7 @@
 
 body {
     margin: 0;
+    font-family: 'Poppins', sans-serif;
 }
 
 .container {
@@ -24,7 +25,6 @@ body {
     grid-column: 1 / 2;
     grid-row: 1 / -1;
     background-color: #D48166;
-    font-family: 'Poppins', sans-serif;
     padding: 20px;
     grid-template-columns: 1fr;
     grid-template-rows: 75px repeat(10, 50px);
