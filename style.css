@@ -33,6 +33,16 @@ body {
     font-weight: 500;
 }
 
+#logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#logo > span {
+    font-size: 40px;
+}
+
 #logo > h1 {
     margin: 0;
     font-weight: 600;
