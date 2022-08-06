@@ -33,9 +33,13 @@ body {
     font-weight: 500;
 }
 
-#logo {
+.sidebar div {
     display: flex;
     align-items: center;
+    gap: 10px;
+}
+
+#logo {
     gap: 10px;
 }
 
