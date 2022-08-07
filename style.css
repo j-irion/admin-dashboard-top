@@ -8,7 +8,7 @@ body {
 .container {
     display: grid;
     grid-template-columns: minmax(300px, 1fr) minmax(660px, 3fr) minmax(300px, 1fr);
-    grid-template-rows: 100px 100px 3fr 3fr;
+    grid-template-rows: 100px 100px min-content min-content;
     min-height: 100vh;
     width: 100vw;
     max-width: 100%;
@@ -133,7 +133,8 @@ body {
 }
 
 .projects > h3,
-.announcements > h3 {
+.announcements > h3,
+.trending > h3 {
     grid-column: 1 / -1;
     margin: 0;
 }
@@ -198,6 +199,47 @@ body {
 .trending {
     grid-column: 3 / -1;
     grid-row: 4 / -1;
+    display: grid;
+    padding: 20px;
+    padding-left: 0;
+    gap: 20px;
+    padding-top: 0;
+}
+
+.trending .card {
+    display: grid;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px;
+    height: min-content;
+    grid-template-columns: min-content auto;
+    align-items: center;
+    column-gap: 20px;
+    row-gap: 30px;
+}
+
+.trending .card img {
+    height: auto;
+    width: 40px;
+    grid-column: 1;
+    border: #000000 1px solid;
+    border-radius: 50%;
+}
+
+.trending .card div {
+    grid-column: 2;
+}
+
+.trending .card div h6 {
+    margin: 0;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.trending .card div p {
+    margin: 0;
+    font-size: 12px;
+    color: #7f7f7f;
 }
 
 .projects,
