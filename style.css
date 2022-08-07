@@ -18,6 +18,34 @@ body {
     grid-column: 2 / -1;
     grid-row: 1 / 2;
     grid-auto-flow: column;
+    padding: 20px 40px;
+    grid-template-columns: 24px 3fr 1fr 24px auto auto;
+    align-items: center;
+    gap: 20px;
+}
+
+.header input {
+    height: 32px;
+    background-color: #E6E2DD;
+    border: none;
+    border-radius: 10px;
+    text-indent: 7px;
+    font-size: 16px;
+}
+
+.header input:focus {
+    outline: none;
+}
+
+.header .material-symbols-outlined:last-child {
+    align-self: end;
+}
+
+#profile-picture {
+    width: 55px;
+    height: auto;
+    border: #000000 solid 1px;
+    border-radius: 50%;
 }
 
 .sidebar {
