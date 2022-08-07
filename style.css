@@ -143,11 +143,13 @@ body {
     background-color: #ffffff;
     border-radius: 8px;
     padding: 30px;
-    /*width: 300px;
-    height: 250px;*/
     font-size: 14px;
     color: #7f7f7f;
     box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: min-content auto min-content;
+    padding-bottom: 20px;
 }
 
 .projects .card h4 {
@@ -158,6 +160,10 @@ body {
 
 .projects .card p {
     margin: 0;
+}
+
+.projects .buttons {
+    justify-self: end;
 }
 
 .announcements {
