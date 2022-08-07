@@ -83,6 +83,42 @@ body {
 .nav {
     grid-column: 2 / -1;
     grid-row: 2 / 3;
+    display: grid;
+    grid-template-columns: auto minmax(min-content, 1fr) repeat(3, min-content);
+    grid-template-rows: 1fr;
+    gap: 20px;
+    grid-auto-flow: column;
+    padding: 0px 40px 20px 40px;
+    align-items: center;
+}
+
+#profile-picture-large {
+    height: auto;
+    width: 70px;
+    border: #000000 solid 1px;
+    border-radius: 50%;
+}
+
+.nav > div p:first-child {
+    margin: 0;
+    font-size: 15px;
+}
+
+.nav > div p:last-child {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.nav button {
+    width:  125px;
+    height: 40px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+    background-color: #D48166;
+    border: none;
+    border-radius: 20px;
+    color: #ffffff;
 }
 
 .projects {
