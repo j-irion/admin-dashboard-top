@@ -55,11 +55,25 @@ body {
     grid-row: 1 / -1;
     background-color: #D48166;
     padding: 20px;
-    grid-template-columns: 1fr;
+    grid-template-columns: 50px 1fr;
     grid-template-rows: 75px repeat(10, 50px);
+    align-items: center;
     color: #ffffff;
     font-size: 18px;
     font-weight: 500;
+    column-gap: 10px;
+}
+
+.sidebar span {
+    justify-self: center;
+}
+
+.sidebar span:first-child {
+    font-size: 40px;
+}
+
+#blank-space {
+    grid-column: 1 / -1;
 }
 
 .sidebar div {
@@ -68,15 +82,7 @@ body {
     gap: 10px;
 }
 
-#logo {
-    gap: 10px;
-}
-
-#logo > span {
-    font-size: 40px;
-}
-
-#logo > h1 {
+h1 {
     margin: 0;
     font-weight: 600;
 }
